@@ -358,6 +358,12 @@ function get_or_create_wp_user( \OneLogin\Saml2\Auth $saml ) {
 		$email       = current( (array) $saml->getAttribute( $email_field ) );
 	}
 
+	var_dump($attributes);
+	var_dump($map);
+	var_dump($email);
+	die();
+
+
 	/**
 	 * Filters matched user, allows matching via other SAML attributes
 	 *
